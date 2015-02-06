@@ -13,6 +13,23 @@
     transition: $transition-property $transition-time $method;
 }
 
+@mixin transform{
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+@mixin shadow{
+  -webkit-box-shadow: 0 1px 2px $shadow;
+  -moz-box-shadow: 0 1px 2px $shadow;
+  -ms-box-shadow: 0 1px 2px $shadow;
+  -o-box-shadow: 0 1px 2px $shadow;
+  box-shadow: 0 1px 2px $shadow;
+
+}
+
 // Hide text in an element
 @mixin hide-text {
   text-indent: 100%;
