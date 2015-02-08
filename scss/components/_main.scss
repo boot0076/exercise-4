@@ -4,7 +4,7 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-html {
+html{
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -13,7 +13,7 @@ html {
 }
 
 
-*, *:before, *:after {
+*, *:before, *:after{
   box-sizing: inherit;
 }
 
@@ -83,7 +83,7 @@ input[type="submit"]{
   font-weight: 400;
   width: 100%;
   color: $white;
-  cursor:pointer;
+  cursor: pointer;
   @include ease(all, 300ms, ease-in-out);
   
   &:hover {
@@ -102,6 +102,7 @@ input[type="submit"]{
   border-bottom-left-radius: 40px;
   position: relative;
   @include transform;
+  @include hide-text;
   &:before{
   	width: 35px;
   	height: 35px;
